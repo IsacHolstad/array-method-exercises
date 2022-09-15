@@ -16,6 +16,10 @@ You will need to find a todo that has the following properties:
 */
 import { todos } from './exercise-3-data.js';
 
-const foundTodo = null; // Replace null and add .map code here
+const foundTodo = todos.find((spesificPost) =>{
+    if(spesificPost.userId === 3 && spesificPost.id === 43){
+        return true
+    }
+})
 
-console.log(foundTodo);
+console.log("todo psot with id: 43 and userId: 3: ",foundTodo);
